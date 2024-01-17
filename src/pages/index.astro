@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hello!</h1>
+			<p>
+				In the realm of online content, I've observed that many pieces combine information from various sources, making comprehension difficult. In my articles, I focus on a single source, providing a clearer understanding and presenting my key takeaways.
+
+			</p>
+			<p>
+				
+This blog aims to serve as a valuable resource for individuals interested in enhancing their focus. It provides a distinctive perspective on the topic, contributing to a more knowledgeable and empathetic community.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
